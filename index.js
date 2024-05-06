@@ -1,21 +1,19 @@
+function names(...arr) {
+    let min = arr[0]
 
-// function names(...arr) {
-//     let max = arr 
-
-//     for(let name of arr) {
-//         if (name.length > max.length) {
-//             max = name
+    for(let name of arr) {
+        if (name.length < min.length) {
+            min = name
             
-//         }
+        }
 
-//     }
-//     return max
-// }
+    }
+    return min
+}
 
-// let maxName = names('Farzod','Samir','Shoxrux','Damir')
+let minName = names('Farzod','Samir','Shoxrux','Damir')
 
-// console.log('Longest name:',maxName);
-
+console.log('Longest name:',minName);
 
 
 
